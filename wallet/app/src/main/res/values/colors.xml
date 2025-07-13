@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkblue">#00008b</color>
+    <color name="grey">#4CAF50</color>
+    <color name="red">#FF0000</color>
+    <color name="ungu">#7e55f4</color>
+    <color name="ungu_tua">#140142</color>
+    <color name="abu_tua">#666666</color>
+</resources>

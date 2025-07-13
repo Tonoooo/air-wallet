@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="swap_token_item">
+        <item>USDC</item>
+        <item>BTC</item>
+        <item>XRP</item>
+        <item>ETH</item>
+    </string-array>
+</resources>

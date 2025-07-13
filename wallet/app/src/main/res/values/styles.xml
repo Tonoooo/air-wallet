@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:backgroundTint">@color/ungu</item>
+        <item name="android:textColor">@color/abu_tua</item> <!-- Warna teks -->
+    </style>
+</resources>

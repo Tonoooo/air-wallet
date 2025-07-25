@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "773779373953",
+    "firebase_url": "https://airwallet-app-default-rtdb.firebaseio.com",
+    "project_id": "airwallet-app",
+    "storage_bucket": "airwallet-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773779373953:android:2668c78af18001e8bb3280",
+        "android_client_info": {
+          "package_name": "com.example.wallet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARiLk_fwC8wnZnBU87-BGmmdemIbGZa2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

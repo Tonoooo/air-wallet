@@ -8,11 +8,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class login extends AppCompatActivity {
 
@@ -21,9 +18,14 @@ public class login extends AppCompatActivity {
     private TextView signupRedirectText;
     private DBHelper dbHelper;
 
+    // Definisikan konstanta untuk kunci Intent extra
+    public static final String EXTRA_USERNAME = "com.example.wallet.USERNAME";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // EdgeToEdge.enable(this); // Jika Anda tidak menggunakan ViewCompat.setOnApplyWindowInsetsListener, ini mungkin tidak diperlukan
         setContentView(R.layout.login);
 
         dbHelper = new DBHelper(this);
@@ -32,6 +34,8 @@ public class login extends AppCompatActivity {
         loginPassword = findViewById(R.id.password);
         loginButton = findViewById(R.id.btnlogin);
         signupRedirectText = findViewById(R.id.textView5);
+
+
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,9 +49,13 @@ public class login extends AppCompatActivity {
                     Boolean checkUser = dbHelper.checkUsernamePassword(username, password);
                     if (checkUser) {
                         Toast.makeText(login.this, "Login Berhasil!", Toast.LENGTH_SHORT).show();
+
                         Intent intent = new Intent(getApplicationContext(), home.class);
+
+                        intent.putExtra(EXTRA_USERNAME, username);
+
                         startActivity(intent);
-                        finish();
+                        finish(); // Mengakhiri LoginActivity agar pengguna tidak bisa kembali dengan tombol back
                     } else {
                         Toast.makeText(login.this, "Username atau Password Salah!", Toast.LENGTH_SHORT).show();
                     }

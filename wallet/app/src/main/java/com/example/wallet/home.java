@@ -21,7 +21,7 @@ public class home extends AppCompatActivity {
         binding = HomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        String username = getIntent().getStringExtra("USERNAME_KEY");
+        String username = getIntent().getStringExtra(login.EXTRA_USERNAME);
 
         HomeFragment homeFragment = new HomeFragment();
         Bundle bundle = new Bundle();
@@ -50,6 +50,8 @@ public class home extends AppCompatActivity {
             return true;
         });
     }
+
+
 
     private void replaceFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();

@@ -60,25 +60,9 @@
                             android:background="#8174A0"
                             app:srcCompat="@drawable/qrcode" />
 
-                        <TextView
-                            android:id="@+id/textView21"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginBottom="16dp"
-                            android:text="0x5d4c154xcf1x354xf84fx4hf78f4435gf5fx"
-                            android:textColor="#FFFFFFFF" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="360dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="SHARE"
-                    app:cornerRadius="12dp" />
 
             </LinearLayout>
         </ScrollView>
